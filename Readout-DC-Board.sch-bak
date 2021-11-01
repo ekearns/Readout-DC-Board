@@ -1,0 +1,360 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "EMPHATIC Readout DC Board"
+Date "2021-10-26"
+Rev "1.0"
+Comp "Boston University Physics Department"
+Comment1 "Ed Kearns"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R2
+U 1 1 6178D1FA
+P 6450 2900
+F 0 "R2" V 6243 2900 50  0000 C CNN
+F 1 "1.96K" V 6334 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6380 2900 50  0001 C CNN
+F 3 "~" H 6450 2900 50  0001 C CNN
+	1    6450 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6178DED4
+P 6450 2200
+F 0 "R1" V 6243 2200 50  0000 C CNN
+F 1 "1K" V 6334 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6380 2200 50  0001 C CNN
+F 3 "~" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 6178ECAB
+P 7750 3700
+F 0 "L1" V 7569 3700 50  0000 C CNN
+F 1 "15 uH" V 7660 3700 50  0000 C CNN
+F 2 "MSS1210-153MEB:IND_MSS1210-153MEB" H 7750 3700 50  0001 C CNN
+F 3 "https://www.coilcraft.com/getmedia/a2805f49-c9b8-42c0-9939-b2d75eed7288/ser2900.pdf" H 7750 3700 50  0001 C CNN
+	1    7750 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 6179001E
+P 7000 4250
+F 0 "D1" V 6954 4330 50  0000 L CNN
+F 1 "Schottky,550mV,5A" V 7045 4330 50  0000 L CNN
+F 2 "Diodes_SMD:D_SMC-RM10_Universal_Handsoldering" H 7000 4250 50  0001 C CNN
+F 3 "~" H 7000 4250 50  0001 C CNN
+	1    7000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61791F5F
+P 4350 4250
+F 0 "C2" H 4465 4296 50  0000 L CNN
+F 1 "100 nF" H 4465 4205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4388 4100 50  0001 C CNN
+F 3 "~" H 4350 4250 50  0001 C CNN
+	1    4350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 61793113
+P 3850 3900
+F 0 "C1" H 3965 3946 50  0000 L CNN
+F 1 "120 uF" H 3965 3855 50  0000 L CNN
+F 2 "35SVPF120M:CAP_35SVPF120M" H 3850 3900 50  0001 C CNN
+F 3 "~" H 3850 3900 50  0001 C CNN
+	1    3850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 61793EC4
+P 7150 3400
+F 0 "C3" V 6898 3400 50  0000 C CNN
+F 1 "10 nF" V 6989 3400 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7188 3250 50  0001 C CNN
+F 3 "~" H 7150 3400 50  0001 C CNN
+	1    7150 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 3100 5900 2900
+Wire Wire Line
+	5900 2900 6100 2900
+Wire Wire Line
+	6100 2900 6100 2200
+Wire Wire Line
+	6100 2200 6300 2200
+Connection ~ 6100 2900
+Wire Wire Line
+	6100 2900 6300 2900
+$Comp
+L power:GND #PWR0101
+U 1 1 617953BF
+P 6900 2350
+F 0 "#PWR0101" H 6900 2100 50  0001 C CNN
+F 1 "GND" H 6905 2177 50  0000 C CNN
+F 2 "" H 6900 2350 50  0001 C CNN
+F 3 "" H 6900 2350 50  0001 C CNN
+	1    6900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2200 6900 2200
+Wire Wire Line
+	6900 2200 6900 2350
+Wire Wire Line
+	6800 3700 7000 3700
+Wire Wire Line
+	7400 3400 7400 3700
+Connection ~ 7400 3700
+Wire Wire Line
+	7400 3700 7600 3700
+Wire Wire Line
+	7400 3400 7300 3400
+$Comp
+L power:GND #PWR0102
+U 1 1 61797231
+P 5900 4750
+F 0 "#PWR0102" H 5900 4500 50  0001 C CNN
+F 1 "GND" H 5905 4577 50  0000 C CNN
+F 2 "" H 5900 4750 50  0001 C CNN
+F 3 "" H 5900 4750 50  0001 C CNN
+	1    5900 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4600 5900 4750
+Wire Wire Line
+	5900 4600 7000 4600
+Wire Wire Line
+	8300 4600 8300 4400
+Connection ~ 5900 4600
+Wire Wire Line
+	7000 4400 7000 4600
+Connection ~ 7000 4600
+Wire Wire Line
+	7000 4600 8300 4600
+Wire Wire Line
+	5550 4400 5550 4600
+Connection ~ 5550 4600
+Wire Wire Line
+	5550 4600 5900 4600
+Wire Wire Line
+	3850 4600 4350 4600
+Wire Wire Line
+	4350 4400 4350 4600
+Connection ~ 4350 4600
+Wire Wire Line
+	4350 4600 5550 4600
+Wire Wire Line
+	3850 4050 3850 4600
+Wire Wire Line
+	3850 3750 3850 3400
+Wire Wire Line
+	3850 3400 4350 3400
+Wire Wire Line
+	4350 4100 4350 3400
+Connection ~ 4350 3400
+Wire Wire Line
+	4350 3400 5000 3400
+Wire Wire Line
+	6800 3400 7000 3400
+Wire Wire Line
+	7900 3700 8300 3700
+Wire Wire Line
+	8300 3700 8300 4100
+Wire Wire Line
+	6600 2900 8300 2900
+Wire Wire Line
+	8300 2900 8300 3700
+Connection ~ 8300 3700
+Wire Wire Line
+	7000 4100 7000 3700
+Connection ~ 7000 3700
+Wire Wire Line
+	7000 3700 7400 3700
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 6179C249
+P 2550 4000
+F 0 "J1" H 2600 4325 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 2600 4326 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm_SMD" H 2550 4000 50  0001 C CNN
+F 3 "~" H 2550 4000 50  0001 C CNN
+	1    2550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 6179D5EA
+P 9700 4150
+F 0 "J2" H 9750 4500 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 9750 4476 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm_SMD" H 9700 4150 50  0001 C CNN
+F 3 "~" H 9700 4150 50  0001 C CNN
+	1    9700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3800 2350 3400
+Connection ~ 3850 3400
+Wire Wire Line
+	2350 3400 2850 3400
+Wire Wire Line
+	2850 3800 2850 3400
+Connection ~ 2850 3400
+Wire Wire Line
+	2850 3400 3850 3400
+Wire Wire Line
+	2350 3900 2350 3800
+Connection ~ 2350 3800
+Wire Wire Line
+	2850 3900 2850 3800
+Connection ~ 2850 3800
+Wire Wire Line
+	2350 4100 2350 4200
+Wire Wire Line
+	2850 4100 2850 4200
+Wire Wire Line
+	3850 4600 2850 4600
+Wire Wire Line
+	2350 4600 2350 4200
+Connection ~ 3850 4600
+Connection ~ 2350 4200
+Wire Wire Line
+	2850 4200 2850 4600
+Connection ~ 2850 4200
+Connection ~ 2850 4600
+Wire Wire Line
+	2850 4600 2350 4600
+Wire Wire Line
+	8300 4600 9500 4600
+Connection ~ 8300 4600
+Connection ~ 9500 4600
+Wire Wire Line
+	9500 4600 10000 4600
+Wire Wire Line
+	9500 4250 9500 4350
+Connection ~ 9500 4350
+Wire Wire Line
+	10000 4350 10000 4250
+Connection ~ 10000 4350
+Wire Wire Line
+	9500 3950 9500 4050
+Wire Wire Line
+	10000 3950 10000 4050
+Connection ~ 10000 3950
+Connection ~ 9500 3950
+Wire Wire Line
+	10000 4600 10000 4350
+Wire Wire Line
+	9500 4600 9500 4350
+Wire Wire Line
+	8300 3700 9500 3700
+Wire Wire Line
+	9500 3700 9500 3950
+Connection ~ 9500 3700
+Wire Wire Line
+	9500 3700 10000 3700
+Wire Wire Line
+	10000 3700 10000 3950
+Text Notes 10050 3700 0    50   ~ 0
+Vout = 3.6V\n
+Text Notes 1900 3450 0    50   ~ 0
+Vin = 12V
+$Comp
+L Device:CP1 C4
+U 1 1 61790F69
+P 8300 4250
+F 0 "C4" H 8415 4296 50  0000 L CNN
+F 1 "330uF" H 8415 4205 50  0000 L CNN
+F 2 "6SVPC330M:CAP_6SVPC330M" H 8300 4250 50  0001 C CNN
+F 3 "~" H 8300 4250 50  0001 C CNN
+	1    8300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM2678T-12:LM2678T-12 U1
+U 1 1 617C7493
+P 5900 3700
+F 0 "U1" H 5400 4200 50  0000 C CNN
+F 1 "LM2678T-12" H 5900 3850 50  0000 C CNN
+F 2 "LM2678T-12:TO127P1041X469X2089-7" H 5400 3750 50  0001 L BNN
+F 3 "" H 5900 3700 50  0001 L BNN
+F 4 "Texas Instruments" H 5400 3650 50  0001 L BNN "MANUFACTURER"
+F 5 "E" H 5900 3700 50  0001 L BNN "PARTREV"
+F 6 "4.69 mm" H 5400 3550 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "IPC 7351B" H 5400 3450 50  0001 L BNN "STANDARD"
+	1    5900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 617E3D1F
+P 2350 2450
+F 0 "#PWR?" H 2350 2300 50  0001 C CNN
+F 1 "VCC" H 2365 2623 50  0000 C CNN
+F 2 "" H 2350 2450 50  0001 C CNN
+F 3 "" H 2350 2450 50  0001 C CNN
+	1    2350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 617E526F
+P 10000 3350
+F 0 "#PWR?" H 10000 3200 50  0001 C CNN
+F 1 "VDD" H 10015 3523 50  0000 C CNN
+F 2 "" H 10000 3350 50  0001 C CNN
+F 3 "" H 10000 3350 50  0001 C CNN
+	1    10000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3350 10000 3700
+Connection ~ 10000 3700
+$Comp
+L Connector:Conn_Coaxial_Power J0
+U 1 1 617EEEC7
+P 2450 2900
+F 0 "J0" V 2450 3100 50  0000 C CNN
+F 1 "Conn_Coaxial_Power" V 2584 2850 50  0001 C CNN
+F 2 "" H 2450 2850 50  0001 C CNN
+F 3 "~" H 2450 2850 50  0001 C CNN
+	1    2450 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 2450 2350 2900
+Wire Wire Line
+	2350 3400 2350 2900
+Connection ~ 2350 3400
+Connection ~ 2350 2900
+$Comp
+L power:GND #PWR?
+U 1 1 617F7B53
+P 2650 2950
+F 0 "#PWR?" H 2650 2700 50  0001 C CNN
+F 1 "GND" H 2655 2777 50  0000 C CNN
+F 2 "" H 2650 2950 50  0001 C CNN
+F 3 "" H 2650 2950 50  0001 C CNN
+	1    2650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2900 2650 2950
+$EndSCHEMATC

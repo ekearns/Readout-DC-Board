@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name 6SVPC330M)(type KiCad)(uri /Users/kearns/Dropbox/Research/EMPHATIC/Readout-DC-Board/6SVPC330M)(options "")(descr ""))
+  (lib (name 35SVPF120M)(type KiCad)(uri /Users/kearns/Dropbox/Research/EMPHATIC/Readout-DC-Board/35SVPF120M)(options "")(descr ""))
+  (lib (name digikey-kicad-library)(type KiCad)(uri /Users/kearns/Dropbox/ETK/Arduino/Digikey_KiCad/digikey-kicad-library)(options "")(descr ""))
+  (lib (name SER2915L-153KL)(type KiCad)(uri /Users/kearns/Dropbox/Research/EMPHATIC/Readout-DC-Board/SER2915L-153KL)(options "")(descr ""))
+  (lib (name LM2678T-12)(type KiCad)(uri /Users/kearns/Dropbox/Research/EMPHATIC/Readout-DC-Board/LM2678T-12)(options "")(descr ""))
+  (lib (name MSS1210-153MEB)(type KiCad)(uri /Users/kearns/Dropbox/Research/EMPHATIC/Readout-DC-Board/MSS1210-153MEB)(options "")(descr ""))
+  (lib (name Readout-DC-Board)(type KiCad)(uri ${KIPRJMOD}/Readout-DC-Board.pretty)(options "")(descr ""))
+)
