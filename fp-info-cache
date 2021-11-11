@@ -1,4 +1,4 @@
-152088999252919
+162015309150675
 6SVPC330M
 CAP_6SVPC330M
 
@@ -29714,20 +29714,6 @@ Gauge_100mm_Type2_SilkScreenTop
 0
 0
 0
-MicroControllers
-RP2040-QFN-56
-QFN, 56 Pin (http://www.cypress.com/file/416486/download#page=40), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
-QFN DFN_QFN
-0
-70
-57
-MicroControllers
-RPi_Pico_SMD_TH
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-86
-43
 Microwave
 ALIM
 
@@ -40277,6 +40263,62 @@ nRF24L01_Breakout
 0
 0
 0
+Readout-DC-Board
+CAP_6SVPC330M
+
+
+0
+2
+2
+Readout-DC-Board
+CAP_35SVPF120M
+
+
+0
+2
+2
+Readout-DC-Board
+C_0805_HandSoldering
+Capacitor SMD 0805, hand soldering
+capacitor 0805
+0
+2
+2
+Readout-DC-Board
+D_SMC-RM10_Universal_Handsoldering
+Diode, Universal, SMC (DO-214AB), RM10, Handsoldering, SMD, Thruhole
+Diode Universal SMC (DO-214AB) RM10 Handsoldering SMD Thruhole
+0
+2
+2
+Readout-DC-Board
+IND_MSS1210-153MEB
+
+
+0
+2
+2
+Readout-DC-Board
+Pin_Header_Straight_2x05_Pitch2.54mm_SMD
+surface-mounted straight pin header, 2x05, 2.54mm pitch, double rows
+Surface mounted pin header SMD 2x05 2.54mm double row
+0
+10
+10
+Readout-DC-Board
+R_1206_HandSoldering
+Resistor SMD 1206, hand soldering
+resistor 1206
+0
+2
+2
+Readout-DC-Board
+TO127P1041X469X2089-7
+
+
+0
+7
+7
 Relays_SMD
 Relay_SPDT_AXICOM_HF3Series_50ohms_Pitch1.27mm
 

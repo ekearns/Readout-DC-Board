@@ -1,2 +1,3 @@
 (sym_lib_table
+  (lib (name Readout-DC-Board-rescue)(type Legacy)(uri ${KIPRJMOD}/Readout-DC-Board-rescue.lib)(options "")(descr ""))
 )
